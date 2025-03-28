@@ -1,0 +1,139 @@
+/* Genel Ayarlar */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 100, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 65px;
+    left: 20px;
+    background-color: rgba(0, 90, 0, 0.2);
+    color: white;
+    font-size: 23px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.sidebar {
+    background-color: rgba(10, 60, 0, 0.7);
+    position: fixed;
+    left: -300px;
+    top: 0px;
+    width: 190px;
+    height: 100%;
+    transition: left 0.3s ease;
+    padding: 40px;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;  /* Kapatma butonunun altına boşluk */
+
+}
+
+/* İçerik Bölümleri */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 270px;
+}
+
+.left img {
+    margin-right: 20px;
+}
+
+.right img {
+    margin-left: 20px;
+}
+
+.text {
+    max-width: 500px;
+}
+
+img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+/* Fotoğraf Galerisi */
+.gallery {
+    text-align: center;
+    padding: 50px;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* İletişim */
+#iletisim {
+    text-align: center;
+    padding: 50px;
+}
+
+.iletisim-form input, 
+.iletisim-form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+    background-color: green;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 100, 0, 0.3);
+    text-align: center;
+    padding: 10px;
+}
